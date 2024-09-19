@@ -1,0 +1,76 @@
+<!-- <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">AttendoSync</a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="/index.home.html">Home</a></li>
+            <li><a href="/empdata.html">Employee</a></li>
+            <li><a href="/attendance.html">Attendance</a></li>
+            <li><a href="/reports.html">Reports</a></li>
+            <li><a href="/profile.html">Profile</a></li>
+            <li><a href="/department.html">Department</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header> -->
+<!-- 
+<main>
+    <h2>Attendance</h2>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Department</th>
+                <th>Status</th> -->
+                <!-- <th>Address</th> -->
+            <!-- </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.id}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.contact}}</td>
+                <td>{{employee.department}}</td>
+                <td>{{employee.Status}}</td> -->
+                
+                <!-- <td>{{employee.address}}</td> -->
+            <!-- </tr>
+            <tr *ngIf="errorMessage">
+                <td colspan="6" style="text-align: center;">{{errorMessage}}</td>
+            </tr>
+        </tbody>
+    </table>
+</main> -->
+
+<!-- src/app/attendance-list/attendance-list.component.html -->
+<!-- src/app/attendance-list/attendance-list.component.html -->
+<div>
+    <h2>Attendance List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of attendanceData">
+          <td>{{ record.employeeName }}</td>
+          <td>{{ record.date }}</td>
+          <td>{{ record.present ? 'Present' : 'Absent' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  
+
+<footer>
+    <p>&copy; 2024 AttendoSync. All rights reserved.</p>
+</footer>

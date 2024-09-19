@@ -1,0 +1,65 @@
+<!-- <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">AttendoSync</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div> 
+        <ul class="nav-menu" id="nav-menu">
+            <li><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/employee">Employee</a></li>
+            <li><a routerLink="/attendance">Attendance</a></li>
+            <li><a routerLink="/reports">Reports</a></li>
+            <li><a routerLink="/profile">Profile</a></li>
+            <li><a routerLink="/department">Department</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header> -->
+
+<!-- <main>
+    <div class="carousel" id="image-carousel">
+        <img src="https://attendo.credisysintegra.com.mx/Attendo/imagenes/Logo%20Attendo%20portada%20completa.jpg" alt="Dynamic content image" class="active">
+        <img src="https://i.pinimg.com/originals/5b/1f/fc/5b1ffc7edca59eeea367472c773aa894.png" alt="Dynamic content image">
+        <img src="https://ustc-ip-lab.github.io/projects/wireless-sensing-with-reconfigurable-intelligent-surface/featured_hu59439e8a120be0db2d8cd14b7a187534_458014_720x0_resize_lanczos_3.png" alt="Dynamic content image">
+    </div>
+</main> -->
+
+<!-- src/app/attendance-form/attendance-form.component.html -->
+ <br><br><br><br>
+<!-- src/app/attendance-form/attendance-form.component.html -->
+<div>
+    <h2>Mark Attendance</h2>
+    <form #attendanceForm="ngForm" (ngSubmit)="markAttendance()">
+      <div>
+        <label for="employeeName">Employee Name</label>
+        <input type="text" id="employeeName" required [(ngModel)]="employeeName" name="employeeName" />
+      </div>
+  
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date" required [(ngModel)]="date" name="date" />
+      </div>
+  
+      <div>
+        <label>
+          <input type="checkbox" [(ngModel)]="present" name="present" /> Present
+        </label>
+      </div>
+  
+      <button type="submit">Mark Attendance</button>
+    </form>
+  </div>
+  
+
+<footer>
+    <h2 style="color: azure;">About Us</h2>
+    <p> <b><i>Developer</i></b> <br> <b>1. Manali Kadu <br> 2. Srushti Bhalerao <br> 3. Mayur Kadu <br> </b> </p>
+</footer>
+
+<script>
+    // JavaScript for toggling the mobile menu
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var navMenu = document.getElementById('nav-menu');
+        navMenu.classList.toggle('active');
+    });
+</script>

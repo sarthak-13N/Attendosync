@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
+    color: #fff;
+    overflow-x: hidden;
+}
+main {
+    padding: 80px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #373131;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+th {
+    background: #333;
+    color: #f4f4f4;
+}
+tr:hover td {
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+footer {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+/* src/app/attendance-list/attendance-list.component.css */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #444;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

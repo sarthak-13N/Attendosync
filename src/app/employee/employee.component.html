@@ -1,0 +1,33 @@
+
+<main>
+    <h2>Employee Data</h2>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{ employee.id }}</td>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.contact }}</td>
+                <td>{{ employee.department }}</td>
+                <td>{{ employee.salary }}</td>
+                <td>{{ employee.address }}</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>&copy; 2024 AttendoSync. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:support@attendosync.com">support</a></p>
+</footer>

@@ -1,0 +1,24 @@
+<!-- <nav>
+    <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/employee">Employee</a></li>
+        <li><a routerLink="/attendance">Attendance</a></li>
+        <li><a routerLink="/reports">Reports</a></li>
+        <li><a routerLink="/department">Departments</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+</nav> -->
+<div class="container">
+    <h1>Departments</h1>
+    <div id="department-cards" class="cards">
+        <!-- Department cards will be added here -->
+        <div *ngFor="let department of departments" class="card">
+            <h2>{{ department.name }}</h2>
+        </div>
+    </div>
+    <button id="add-department-btn" (click)="addDepartment()">Add New Department</button>
+</div>
+<footer>
+    <p>&copy; 2024 AttendoSync. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:support@attendosync.com">support</a></p>
+</footer>
