@@ -7,6 +7,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DepartmentComponent } from './department/department.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'employee', component: EmployeeComponent },
   { path: 'attendance', component: AttendanceComponent },
   { path: 'reports', component: ReportsComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'department', component: DepartmentComponent },
   { path: 'contact', component: ContactComponent },
